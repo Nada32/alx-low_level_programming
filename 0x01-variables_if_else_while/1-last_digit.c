@@ -10,7 +10,7 @@ int main(void)
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-        char dodyy=(char)(n);
+        char dody=(char)(n);
         int i;
         char x;
         for(i=0;i<sizeof(dody);i++)
