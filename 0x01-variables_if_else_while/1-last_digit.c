@@ -10,10 +10,7 @@ int main(void)
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char int_string[20];
-
-	itoa(var, int_string, 10);
-        char dody[100]=int_string;
+        char dodyy=(char)(n);
         int i;
         char x;
         for(i=0;i<sizeof(dody);i++)
