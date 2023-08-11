@@ -24,7 +24,7 @@ int main(void)
 	}
         else 
 	{
-	break; 
+	printf("try"); 
 	}
 	return (0);
 }
