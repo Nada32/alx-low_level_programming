@@ -12,19 +12,19 @@ int main(void)
 	/* your code goes there */
         if (n > 0)
 	{
-	printf("%d is positive",&n)
+	printf("%d is positive",&n) ;
 	}
 	elif (n < 0)
 	{
-	printf("%d is negitive",&n)
+	printf("%d is negitive",&n) ;
 	}
         elif (n===0)
         {
-	printif("%d is zero",&n)
+	printif("%d is zero",&n) ;
 	}
         else 
 	{
-	break 
+	break ; 
 	}
 	return (0);
 }
