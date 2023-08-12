@@ -16,10 +16,8 @@ int main(void)
 	char z = 'z';
 
 	for (i = (int)(a); i < ((int)(z) + 1); i++)
-	{
-	    putchar((char)(i));	
+	{ putchar((char)(i));	
 	}	
-
         putchar('\n');
 
 	return (0);
