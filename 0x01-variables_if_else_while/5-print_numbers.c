@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+
 /**
  * main - This program prints all single digit numbers of base 10 .
  *
@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0 ; i<10 ; i++)
 	{
-	x = pow(10, i);
+	x = i;
 	printf("%d",x);
 	}
 
