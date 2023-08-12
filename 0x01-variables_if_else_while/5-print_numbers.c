@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	char i;
-	char x;
+	int i;
+	int x;
 
 	for (i = 0 ; i<10 ; i++)
 	{
 	x = pow(10, i);
-	putchar(x);
+	printf("%d",x);
 	}
 
 
