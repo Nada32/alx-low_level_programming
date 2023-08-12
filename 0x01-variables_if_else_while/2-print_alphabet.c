@@ -13,10 +13,11 @@ int main(void)
 	char a='a';
 	char z='z';
 
-	for (i=(int)(a);i<(int)(z)+1;i++)
+	for (i=(int)(a);i<((int)(z)+1);i++)
+	{
 		putchar((char)(i));
 	        putchar('\n');
-
+	}
 	return (0);
 
 }
