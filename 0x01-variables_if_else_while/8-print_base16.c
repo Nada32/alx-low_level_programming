@@ -13,7 +13,7 @@ int main(void)
 	for (i = 0 ; i < 16 ; i++)
 	{
 	x = i;
-	printf("%d", x);
+	printf("%x", x);
 	}
 	putchar('\n');
 
