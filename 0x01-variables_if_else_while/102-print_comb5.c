@@ -18,7 +18,9 @@ int main(void)
 	{
 	for (y = 0 ; y < 10 ; y++)
 	{
-	for (z = y - 1 && z != 0 ; z < 10 ; z++)
+	for (z = y - 1 ; z < 10 ; z++)
+	{
+	if (z > 0)
 	{
 	putchar(i + '0');
 	putchar(x + '0');
@@ -27,7 +29,7 @@ int main(void)
 	putchar(z + '0');
 	if (i < 8 || x < 8 || y < 8 || z < 8)
 	putchar(',');
-	}}}}
+	}}}}}
 
 	putchar('\n');
 
