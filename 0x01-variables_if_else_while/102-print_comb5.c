@@ -28,11 +28,11 @@ int main(void)
 	putchar(y + '0');
 	putchar(z + '0');
 	if (i < 9 || x < 8 || y < 8 || z < 8)
-	putchar(',');
-	putchar(' ');
+	{putchar(',');
+	putchar(' ');}
 	}}}}}
 
-
+	putchar('\n');
 
 	return (0);
 }
