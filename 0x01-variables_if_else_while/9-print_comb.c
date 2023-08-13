@@ -1,27 +1,21 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet in lowercase followed by a new line.
+ * main - This program prints all single digit numbers of base 10 .
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int i;
-	char a = 'a';
-	char z = 'z';
 
-	for (i = (int)(a); i < ((int)(z) + 1); i++)
+	for (i = 0 ; i < 10 ; i++)
 	{
-	putchar((char)(i));
+	putchar(i+'0');
 	putchar(',');
 	putchar(' ');
 	}
-
 	putchar('\n');
 
 	return (0);
-
 }
