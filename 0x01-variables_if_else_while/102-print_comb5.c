@@ -29,6 +29,7 @@ int main(void)
 	putchar(z + '0');
 	if (i < 8 || x < 8 || y < 8 || z < 8)
 	putchar(',');
+	putchar(' ');
 	}}}}}
 
 	putchar('\n');
