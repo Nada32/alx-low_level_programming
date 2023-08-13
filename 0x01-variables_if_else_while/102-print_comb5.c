@@ -16,7 +16,7 @@ int main(void)
 	{
 	for (x = i ; x < 10 ; x++)
 	{
-	for (y = 1 ; y < 10 ; y++)
+	for (y = 0 ; y < 10 ; y++)
 	{
 	for (z = y - 1 && z != 0 ; z < 10 ; z++)
 	{
