@@ -17,16 +17,17 @@ int main(void)
 	for (x = i ; x < 10 ; x++)
 	{
 	for (y = 0 ; y < 10 ; y++)
-        {
-        for (z = y + 1 ; z < 10 ; z++)
-        {
+	{
+	for (z = y - 1 ; z < 10 ; z++)
+	{
 	putchar(i + '0');
-        putchar(x + '0');
+	putchar(x + '0');
 	putchar(' ');
-        putchar(y + '0');
-        putchar(z + '0');
+	putchar(y + '0');
+	putchar(z + '0');
 	if (i < 8 || x < 8 || y < 8 || z < 8)
-	putchar(',');}}}}
+	putchar(',');
+	}}}}
 
 	putchar('\n');
 
