@@ -10,6 +10,7 @@ int main(void)
 	int i;
 	int x;
 	int y;
+
 	for (i = 0 ; i < 10 ; i++)
 	{
 	for (x = i + 1 ; x < 10 ; x++)
@@ -19,7 +20,7 @@ int main(void)
 	putchar(i + '0');
 	putchar(x + '0');
 	putchar(y + '0');
-	if (i < 8)
+	if (i < 7)
 	{
 	putchar(',');
 	putchar(' ');
