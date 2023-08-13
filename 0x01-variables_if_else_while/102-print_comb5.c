@@ -18,7 +18,7 @@ int main(void)
 	{
 	for (y = 0 ; y < 10 ; y++)
 	{
-	for (z = y - 1 ; z < 10 ; z++)
+	for (z = i ; z < 10 ; z++)
 	{
 	if (y > 0 || z > 0)
 	{
