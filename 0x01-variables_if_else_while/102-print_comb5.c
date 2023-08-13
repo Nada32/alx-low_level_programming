@@ -14,20 +14,20 @@ int main(void)
 
 	for (i = 0 ; i < 10 ; i++)
 	{
-	for (x = i ; x < 10 ; x++)
+	for (x = 0 ; x < 10 ; x++)
 	{
-	for (y = 0 ; y < 10 ; y++)
+	for (y = i ; y < 10 ; y++)
 	{
-	for (z = i ; z < 10 ; z++)
+	for (z = 0 ; z < 10 ; z++)
 	{
-	if (y != i || (z != x && z > x))
+	if (y > i || z > x)
 	{
 	putchar(i + '0');
 	putchar(x + '0');
 	putchar(' ');
 	putchar(y + '0');
 	putchar(z + '0');
-	if (i < 8 || x < 8 || y < 8 || z < 8)
+	if (i < 9 || x < 8 || y < 8 || z < 8)
 	putchar(',');
 	putchar(' ');
 	}}}}}
