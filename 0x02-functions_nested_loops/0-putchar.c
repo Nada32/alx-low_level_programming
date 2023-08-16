@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include "main.h"
+#include "mmain.h"
 
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-main(void)
+int main()
 {
 	printf("_putchar\n");
 	return (0);
