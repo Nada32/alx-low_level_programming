@@ -11,17 +11,18 @@ int main(void)
 	return (0);
 }
 
-int print_alphabet()
+void print_alphabet(void)
 {
 	char a = 'a';
 	char z = 'z';
 	int i;
-
+	char d;
 
 	for (i = (int)(a) ; i < ((int)(z) + 1) ; i++)
 {
-	_putchar((char)(i));
+	d = (char)(i);
+	_putchar(d);
 }
 	_putchar('\n');
-	return 0;
+
 }
