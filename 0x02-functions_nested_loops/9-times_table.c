@@ -24,13 +24,15 @@ void times_table(void)
 	{
 	zz = z / 10;
 	zzz = z % 10;
-	_putchar('0' + zzz);
 	_putchar('0' + zz);
+	_putchar('0' + zzz);
 	}
 	if (j < 9)
 	{
 	_putchar(' ');
 	_putchar(',');
-	}}}
+	}}
+	_putchar('\n');
+	}
 
 }
