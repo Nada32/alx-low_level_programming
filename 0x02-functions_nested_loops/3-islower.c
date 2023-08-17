@@ -2,7 +2,7 @@
 
 /**
  * _islower - checks the lower  alphabet, in lowercase .
- * @c - parameter any char
+ * @c: parameter any char
  * Return: Always 0.
  */
 
