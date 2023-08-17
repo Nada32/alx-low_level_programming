@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int _putchar();
+int _putchar(char);
 int print_alphabet(); 
 int main(void)
 {
@@ -18,12 +18,12 @@ int print_alphabet()
 	char a = 'a';
 	char z = 'z';
 	int i;
-	int d;
+
 
 	for (i = (int)(a) ; i < ((int)(z) + 1) ; i++)
 {
 	_putchar((char)(i));
 }
-	_putchar(\n);
+	_putchar('\n');
 	return 0;
 }
