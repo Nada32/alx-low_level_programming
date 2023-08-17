@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _abs - prints the abs of a num .
+ * _abs - prints the abs of a num .
  * @j: parameter
  * Return: Always 0 (Success)
  */
