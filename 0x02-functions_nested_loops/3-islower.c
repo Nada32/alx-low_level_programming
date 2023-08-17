@@ -12,7 +12,7 @@ int _islower(int c)
 	int i = (int)(a);
 	int j = (int)(z);
 
-	if (i < c < j)
+	if (i <= c || c <= j)
 	return 1;
 
 	else
