@@ -2,7 +2,7 @@
 #define main_h
 
 int _putchar(char);
-int print_alphabet();
+void print_alphabet(void);
 
 
 
