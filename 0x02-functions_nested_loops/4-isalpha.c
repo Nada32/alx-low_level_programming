@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * int _isalpha - checks the alphabet, in lowercase .
+ *  _isalpha - checks the alphabet, in lowercase .
  * @c: parameter any char
  * Return: Always 0.
  */
 
-int _int _isalpha(int c)
+int _isalpha(int c)
 {
 	char a = 'A';
 	char z = 'z';
