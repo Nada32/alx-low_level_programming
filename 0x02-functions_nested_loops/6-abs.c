@@ -8,10 +8,11 @@
 int _abs(int j)
 {
 	int i;
-	j = i * i;
+	i = (j * j) / j;
 
 
 
-	return (j);
+
+	return (i);
 }
 
