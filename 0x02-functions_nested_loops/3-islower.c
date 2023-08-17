@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _islower(int c) - checks the lower  alphabet, in lowercase .
+ * _islower - checks the lower  alphabet, in lowercase .
+ * c - parameter any char
  * Return: Always 0.
  */
 
