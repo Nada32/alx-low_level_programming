@@ -18,10 +18,19 @@ void times_table(void)
 	for (j = 0 ; j < 10 ; j++)
 	{
 	z = i * j ;
-	zz=z/10;
-	zzz=zz%10;
+	if (z < 10)
+	_putchar('0' + z);
+	else if (z > 9)
+	{
+	zz = z / 10;
+	zzz = z % 10;
 	_putchar('0' + zzz);
 	_putchar('0' + zz);
-	}}
+	}
+	if (j < 9)
+	{
+	_putchar(' ');
+	_putchar(',');
+	}}}
 
 }
