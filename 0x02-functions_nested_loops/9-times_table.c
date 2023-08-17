@@ -19,19 +19,41 @@ void times_table(void)
 	{
 	z = i * j ;
 	if (z < 10)
+	{
 	_putchar('0' + z);
+	void times_table(void)
+{
+        int i;
+        int j;
+        int z;
+        int zz;
+        int zzz;
+
+        for (i = 0 ; i < 10 ; i++)
+        {
+        for (j = 0 ; j < 10 ; j++)
+        {
+        z = i * j ;
+        if (z < 10)
+        {
+        _putchar('0' + z);
+	if (j < 9)
+        {
+        _putchar(',');
+        _putchar(' ');
+	_putchar(' ');
+	}}
 	else if (z > 9)
 	{
 	zz = z / 10;
 	zzz = z % 10;
 	_putchar('0' + zz);
 	_putchar('0' + zzz);
-	}
 	if (j < 9)
-	{
-	_putchar(' ');
-	_putchar(',');
-	}}
+        {
+        _putchar(',');
+        _putchar(' ');
+	}}}
 	_putchar('\n');
 	}
 
