@@ -8,11 +8,6 @@
 
 int print_sign(int n)
 {
-	char a = 'A';
-	char z = 'z';
-	int i = (int)(a);
-	int j = (int)(z);
-
 	if (n > 0)
 	{
 	_putchar('+');
