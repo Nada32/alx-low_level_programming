@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - checks the lower  alphabet, in lowercase .
+ * _islower(int c) - checks the lower  alphabet, in lowercase .
  * Return: Always 0.
  */
 
@@ -13,10 +13,10 @@ int _islower(int c)
 	int j = (int)(z);
 
 	if (i <= c && c < j)
-	return 1;
+	return (1);
 
 	else
-	return 0;
+	return (0);
 
 
 }
