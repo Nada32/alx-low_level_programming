@@ -8,7 +8,6 @@
 
 void print_alphabet(void)
 {
-	int _putchar(char);
 	char a = 'a';
 	char z = 'z';
 	int i;
