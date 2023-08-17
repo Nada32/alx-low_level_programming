@@ -2,7 +2,7 @@
 
 /**
  * int _abs - prints the abs of a num .
- * @z: parameter
+ * @j: parameter
  * Return: Always 0 (Success)
  */
 int _abs(int j)
@@ -13,7 +13,7 @@ int _abs(int j)
 	{
 	i = -1 * j;
 	}
-	else 
+	else
 	i = j;
 
 
