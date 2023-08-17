@@ -5,6 +5,7 @@
  *
  * Return: Always 0.
  */
+int _putchar();
 int print_alphabet(); 
 int main(void)
 {
@@ -21,8 +22,8 @@ int print_alphabet()
 
 	for (i = (int)(a) ; i < ((int)(z) + 1) ; i++)
 {
-	putchar((char)(i));
+	_putchar((char)(i));
 }
-	putchar(\n);
+	_putchar(\n);
 	return 0;
 }
