@@ -7,6 +7,7 @@
  */
 int _abs(int)
 {
+	int i;
 	int j;
 	j = i * i;
 
