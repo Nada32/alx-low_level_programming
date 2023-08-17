@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * int _abs - prints the abs of a num .
@@ -8,8 +8,13 @@
 int _abs(int j)
 {
 	int i;
-	i = (j * j) / j;
 
+	if (j < 0)
+	{
+	i = -1 * j;
+	}
+	else 
+	i = j;
 
 
 
