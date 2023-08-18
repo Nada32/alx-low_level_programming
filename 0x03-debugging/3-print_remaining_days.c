@@ -12,27 +12,86 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	if ((year % 4 == 0) && (year % 400 == 0) || (year % 100 != 0))
-	{
-	if (month > 3 && day >= 60)
-	{
-	day++;
-	}
+	int daysPassed=0;
+	if (year % 4 == 0 || (year % 400 == 0 && year % 100 == 0))
+{
+	if (month > 2 && day >= 60)
+{
+//	day++;
+		
+		
+			
+	for (int i = 1; i < month; i++) {
+	if (i == 2)
+	daysPassed += 28;
+	else if (i < 8 && i % 2 == 1)
+	daysPassed += 31;
+	else if (i < 7)
+	daysPassed += 30;
+	else if (i % 2 == 0)
+	daysPassed += 31;
+	else
+	daysPassed += 30;
+}
+	daysPassed += day;
 
-	printf("Day of the year: %d\n", day);
-	printf("Remaining days: %d\n", 366 - day);
-	}
+
+
+
+
+}
+
+	printf("Day of the year: %d\n",daysPassed );
+	printf("Remaining days: %d\n", 366 - daysPassed);
+}
 	else
-	{
+{
 	if (month == 2 && day == 60)
-	{
-	printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
-	}
+{
+
+
+
+	for (int i = 1; i < month; i++) {
+	if (i == 2)
+	daysPassed += 28;
+	else if (i < 8 && i % 2 == 1)
+	daysPassed += 31;
+	else if (i < 7)
+	daysPassed += 30;
+	else if (i % 2 == 0)
+	daysPassed += 31;
 	else
-	{
-	printf("Day of the year: %d\n", day);
-	printf("Remaining days: %d\n", 365 - day);
-	}
-	}
+	daysPassed += 30;
+}
+	daysPassed += day;
+
+
+
+
+	printf("Invalid date: %02d/%02d/%04d\n", month, daysPassed , year);
+}
+	else
+{
+
+	for (int i = 1; i < month; i++) {
+	if (i == 2)
+	daysPassed += 28;
+	else if (i < 8 && i % 2 == 1)
+	daysPassed += 31;
+	else if (i < 7)
+	daysPassed += 30;
+	else if (i % 2 == 0)
+	daysPassed += 31;
+	else
+	daysPassed += 30;
+}
+	daysPassed += day;
+
+
+
+	printf("Day of the year: %d\n", daysPassed);
+	printf("Remaining days: %d\n", 365 - daysPassed);
+}
+}
 }
 
