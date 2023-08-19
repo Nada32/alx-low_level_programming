@@ -13,7 +13,7 @@ int _isdigit(int c)
 	int i = (int)(a);
 	int j = (int)(z);
 
-	if (i <= c && c < j)
+	if (i <= c && c < j + 1)
 	return (1);
 
 	else
