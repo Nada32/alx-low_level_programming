@@ -18,19 +18,15 @@ void more_numbers(void)
 	for (k = 0 ; k < 2 ; k++)
 	for (i = 0 ; i < 10 ; i++)
 {
-	if (i < 5 && k == 1)
+	if ((i < 9 && k == 0)|| (i < 5 && k == 1))
 	{
+	if (k == 1)
 	dd = (char)(k);
 	d = (char)(i);
 	_putchar(dd + '0');
 	_putchar(d + '0');
 }
-	else if (k == 0)
-{
-	d = (char)(i);
-	_putchar(d + '0');
-
-}}	
+}	
 	_putchar('\n');
 
 }}
