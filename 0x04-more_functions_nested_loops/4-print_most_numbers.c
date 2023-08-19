@@ -11,10 +11,12 @@ void print_most_numbers(void)
 	char z = '9';
 	int i;
 	char d;
+	char two = '2';
+	char four = '4';
 
 	for (i = (int)(a) ; i < ((int)(z) + 1) ; i++)
 {
-	if (i != 2 && i != 4)
+	if ((char)(i) != two && (char)(i) != four)
 	{
 
 	d = (char)(i);
