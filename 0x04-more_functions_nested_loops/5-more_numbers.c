@@ -18,7 +18,7 @@ void more_numbers(void)
 	for (k = 0 ; k < 2 ; k++)
 	for (i = 0 ; i < 10 ; i++)
 {
-	if ((i < 9 && k == 0) || (i < 5 && k == 1))
+	if ((i < 10 && k == 0) || (i < 5 && k == 1))
 	{
 
 	dd = (char)(k);
@@ -27,7 +27,7 @@ void more_numbers(void)
 	_putchar(dd + '0');
 	_putchar(d + '0');
 }
-}	
+}
 	_putchar('\n');
 
 }}
