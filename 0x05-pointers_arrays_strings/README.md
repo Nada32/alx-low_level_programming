@@ -1,0 +1,1 @@
+hi pointers, arrays, and strings !
