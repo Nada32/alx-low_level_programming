@@ -18,7 +18,7 @@ void puts_half(char *str)
 	if(str[len / 2] == ' ')
 	{
 	i = (len / 2) - 1;
-	len = mn - 1;
+	len = mn;
 	}
 	for (; i < len ; i++)
 	{
