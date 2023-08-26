@@ -8,7 +8,7 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, m;
+	int i, m, k;
 	int len1 = 0;
 	int len2 = 0;
 	int z = 0;
@@ -41,33 +41,17 @@ int _strcmp(char *s1, char *s2)
 
 	}
 	}
-	if (z == len1 == len2)
-	//putchar('0');
-	return (0);
+	if ((z == len1) == (len2))
+	k = 0;
 	else if (y > x)
 	{int b = (int)(s1[0]) - (int)(s2[0]);
-	return (b);
-	//int bb = b / 10;
-	//int bbb = b % 10;
-	//if (bb != 0)
-	//putchar((char)(bb) + '0');
-	//putchar((char)(bbb) + '0');}
+	k = b;
 	}
 	else if (x > y)
 	{int n = (int)(s1[0]) - (int)(s2[0]);
-	return (n);
-	//if (n < 0)
-	//n = n * -1;
-	//int nn = n / 10;
-
-	//int nnn = n % 10;
-
-	//putchar('-');
-	//if (nn != 0)
-	//putchar((char)(nn) + '0');
-	//putchar((char)(nnn) + '0');
+	k = n;
 	}
-
+	return (k);
 
 
 
