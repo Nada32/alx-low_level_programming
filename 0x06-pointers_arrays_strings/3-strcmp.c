@@ -23,8 +23,8 @@ int _strcmp(char *s1, char *s2)
 	m = len1;
 	else if (len1 <= len2)
 	m = len2;
-	for (i = 0; i < m; i++) {
-	if (s1[i] == s2[i])
+	for (i = 0; i < m; i++)
+	{	if (s1[i] == s2[i])
 	z++;
 	else if (s1[i] > s2[i])
 	{y = (int)(s1[i]) + y; }
@@ -32,15 +32,16 @@ int _strcmp(char *s1, char *s2)
 	{x = (int)(s2[i]) + x; }}
 	if ((z == len1) && (z  == len2))
 	k = 0;
-	else if (y > x) {
-	for (i = 0; i < m; i++) {
-	if (s1[i] != s2[i])
-	{b = (int)(s1[i]) - (int)(s2[i]);
-	break; }}
+	else if (y > x)
+	{	for (i = 0; i < m; i++)
+		{	if (s1[i] != s2[i])
+			{b = (int)(s1[i]) - (int)(s2[i]);
+			break; }}
 	k = b; }
-	else if (x > y) {
-	for (i = 0; i < m; i++) {
-	if (s1[i] != s2[i]) {n = (int)(s1[i]) - (int)(s2[i]);
-	break; }}
+	else if (x > y)
+	{	for (i = 0; i < m; i++)
+		{	if (s1[i] != s2[i])
+			{n = (int)(s1[i]) - (int)(s2[i]);
+			break; }}
 	k = n; }
 	return (k); }
