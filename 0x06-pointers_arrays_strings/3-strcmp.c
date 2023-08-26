@@ -8,7 +8,7 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, m, k;
+	int i, m, b, n, k;
 	int len1 = 0;
 	int len2 = 0;
 	int z = 0;
@@ -36,9 +36,15 @@ int _strcmp(char *s1, char *s2)
 	if ((z == len1) && (z  == len2))
 	k = 0;
 	else if (y > x)
-	{int b = (int)(s1[0]) - (int)(s2[0]);
+	{for (i = 0; i < m; i++)
+	{if (s1[i] != s2[i])
+	{b = (int)(s1[i]) - (int)(s2[i]);
+	break; }}
 	k = b; }
 	else if (x > y)
-	{int n = (int)(s1[0]) - (int)(s2[0]);
+	{for (i = 0; i < m; i++)
+	{if (s1[i] != s2[i])	
+	{n = (int)(s1[i]) - (int)(s2[i]);
+	break; }}
 	k = n; }
 	return (k); }
