@@ -8,8 +8,9 @@
  */
 void reverse_array(int *a, int n)
 {
-	int arr[n], i, z = 0;
+	int i, z = 0;
 
+	int *arr = (int *) malloc(n * sizeof(int));
 	for (i = n-1; i > 0; i--)
 	{arr[z] = a[i];
 	z++; }
