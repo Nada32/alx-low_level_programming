@@ -16,8 +16,7 @@ char *leet(char *c)
 	for (i = 0; i < len; i++)
 	{
 	for (j = 0; j < 10; j++)
-	if (c[i] == s[j])
-	c[i] = '0' + arr[j];
+	(c[i] == s[j]) ? (c[i] = '0' + arr[j]) : (c[i] = c[i]);
 	}
 	return (c);
 }
