@@ -8,7 +8,7 @@
 char *leet(char *c)
 {
 	int i, j;
-	int arr[10] = {4,4,3,3,0,0,7,7,1,1};
+	int arr[10] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
 	char s[] = "aAeEoOtTlL";
 
 	for (i = 0; c[i] != '\0'; i++)
@@ -17,7 +17,7 @@ char *leet(char *c)
 	{
 	if (c[i] == s[j])
 	c[i] = '0' + arr[j]; }
-	i++;
+
 	}
 	return (c);
 }
