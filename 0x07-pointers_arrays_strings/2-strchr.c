@@ -20,14 +20,14 @@ char *_strchr(char *s, char c)
 	for (j = i; j < len; j++)
 	{
 	ss[j] = s[i + z];
-	return (ss[j]);
+	_putchar(ss[j]);
 	z++;
 	}
 	break;
 	}
 	else 
 	{ss[i] = NULL;
-	return (ss[i]); }
 	}
-	
+	}
+	return (ss);	
 }
