@@ -22,6 +22,6 @@ unsigned int _strspn(char *s, char *accept)
 	}}
 	if (z > 0)
 	return (z - 2);
-	else if (z == 0)
+	else
 	return (0);
 }
