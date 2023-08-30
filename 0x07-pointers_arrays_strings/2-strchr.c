@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 	while (s[len] != '\0')
 	len++;
 
-	char ss[len];
+	char ss[1000];
 	for (i = 0; i < len; i++)
 	{
 	if (s[i] == c)
@@ -26,7 +26,8 @@ char *_strchr(char *s, char c)
 	break;
 	}
 	else 
-	{ss[i] = NULL;
+	{ss[i] = '\0';
+	_putchar(ss[i]);
 	}
 	}
 	return (ss);	
