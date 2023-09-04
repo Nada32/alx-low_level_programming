@@ -14,3 +14,12 @@ int main(int argc, char *argv[])
 	itsname(argv[0]);
 	return (0);
 }
+void itsname(char *c)
+{
+	int i;
+
+	for (i = 0; c[i] != '\0'; i++)
+	{
+	_putchar(c[i]);
+	}
+}
