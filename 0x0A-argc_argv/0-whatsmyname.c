@@ -7,6 +7,7 @@
  *
  * Return: Always 0.
  */
+void itsname(char *c);
 int main(int argc, char *argv[])
 {
 	if (argc > 0)
