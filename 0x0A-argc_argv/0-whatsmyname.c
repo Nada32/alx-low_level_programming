@@ -6,7 +6,7 @@
  * main - Entry point
  * itsname - print name
  * @argc: parameter
- * @argv[]: parameter
+ * @argv: parameter
  * @c: parameter
  * Return: Always 0.
  */
