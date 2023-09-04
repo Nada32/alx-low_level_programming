@@ -10,7 +10,16 @@
  */
 int main(int argc, char *argv[])
 {
+	int i;
+
+	char *c = *argv;
 	if (argc > 0)
-	itsname(argv[0]);
+	{
+	for (i = 0; c[i] != '\0'; i++)
+	{
+	_putchar(c[i]);
+	}
+	_putchar('\n');
+	}
 	return (0);
 }
