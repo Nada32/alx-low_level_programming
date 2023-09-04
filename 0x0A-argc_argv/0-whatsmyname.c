@@ -4,7 +4,8 @@
 
 /**
  * main - Entry point
- *
+ * itsname - print name
+ * @c: parameter
  * Return: Always 0.
  */
 void itsname(char *c);
