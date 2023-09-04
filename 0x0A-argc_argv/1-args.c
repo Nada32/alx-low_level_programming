@@ -5,7 +5,7 @@
  * main - Entry point
  * @argc: parameter
  * @argv: parameter
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
