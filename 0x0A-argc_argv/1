@@ -1,0 +1,27 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * main - Entry point
+ * @argc: parameter
+ * @argv: parameter
+ * Return: Always 0.
+ */
+int main(int argc, char **argv[])
+{
+	int z;
+	char *x, *y;
+
+	if (argc < 2)
+	{
+	printf("Error\n");
+	return (1);
+	}
+	x = *argv[1];
+	y = *argv[2];
+	z = (((int) (x)) * ((int) (y)));
+	printf("%d\n", z);
+
+	return (0);
+}
