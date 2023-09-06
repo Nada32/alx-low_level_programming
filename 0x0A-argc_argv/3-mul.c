@@ -23,9 +23,9 @@ int main(int argc, char **argv)
 	x = x * 10 + (*argv[1] - 48);
 	}
 	for (i = 0; *argv[2] != '\0'; i++)
-        {
-        y = y * 10 + (*argv[2] - 48);
-        }
+	{
+	y = y * 10 + (*argv[2] - 48);
+	}
 	z = x * y;
 
 	printf("%d\n", z);
