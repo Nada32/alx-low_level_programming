@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	return (1);
 	}
 
-	printf("%d\n", ((int) *argv[1] * (int) *argv[2]));
+	printf("%d\n", ((int) *argv[1]) * ((int) *argv[2]));
 
 	return (0);
 }
