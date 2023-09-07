@@ -14,8 +14,7 @@ void *malloc_checked(unsigned int b)
 	mem = (int *) malloc(b * sizeof(int));
 	if (mem == NULL)
 	{
-	_putchar('9');
-	_putchar('8');
+	return (98);
 	}
 	return (mem);
 }
