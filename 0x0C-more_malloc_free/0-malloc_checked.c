@@ -9,14 +9,12 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *mem, a, *aa;
+	int *mem;
 
 	mem = (int *) malloc(b * sizeof(int));
 	if (mem == NULL)
 	{
-	a = 98;
-	aa = &a;
-	return (aa);
+	exit(98);
 	}
 	return (mem);
 }
