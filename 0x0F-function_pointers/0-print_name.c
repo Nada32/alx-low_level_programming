@@ -3,7 +3,8 @@
 /**
  * print_name - Entry point
  * @name: parameter
- * @f: parameter
+ * @f: function pointer
+ * Return: Nothing.
  */
 void print_name(char *name, void (*f)(char *))
 {
