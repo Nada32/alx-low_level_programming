@@ -10,13 +10,13 @@ int (*_p(char *a))(int, int)
 {
 int i;
 
-t_mix m[] = {{"+", op_add}, {"-", op_sub},
-{"*", op_mul}, {"/", op_div}, {"%", op_mod}};
+op_t ops[] = {{"+", op_add}, {"-", op_sub},
+{"*", op_mul}, {"/", op_div}, {"%", op_mod}, {NULL, NULL}};
 
 for (i = 0; i < 5; i++)
 {
-if (a == m[i].c)
-return (m[i].func);
+if (a == ops[i].c)
+return (ops[i].func);
 }
 return (NULL);
 

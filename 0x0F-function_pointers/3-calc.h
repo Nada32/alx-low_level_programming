@@ -1,10 +1,10 @@
 #ifndef hi_mix
 #define hi_mix
-typedef struct mix
+typedef struct op
 {
 char *c;
 int (*func)(int, int);
-} t_mix;
+} op_t;
 int op_add(int, int);
 int op_sub(int, int);
 int op_mul(int, int);
