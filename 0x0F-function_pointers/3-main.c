@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 char z = argv[2][0];
-int z;
+int zz;
 if (argc != 4)
 {
 printf("Error\n");
