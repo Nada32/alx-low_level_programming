@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 int z;
 if (argc == 4)
 {
-z = (*_p(argv[2]))(atoi(argv[1]), atoi(argv[3]));
+z = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", z);
 }
 return (0);
