@@ -1,59 +1,5 @@
 #include "3-calc.h"
 
-/**
- * op_add - Entry point
- * @a: parameter
- * @b: parameter
- * Return: Always 0.
- */
-int add(int a, int b)
-{
-int c = a + b;
-
-return (c);
-}
-
-/**
- * op_add - Entry point
- * @a: parameter
- * @b: parameter
- * Return: Always 0.
- */
-int add(int a, int b)
-{
-int c = a + b;
-
-return (c);
-}
-
-/**
- * op_add - Entry point
- * @a: parameter
- * @b: parameter
- * Return: Always 0.
- */
-int add(int a, int b)
-{
-int c = a + b;
-
-return (c);
-}
-
-/**
- * op_add - Entry point
- * @a: parameter
- * @b: parameter
- * Return: Always 0.
- */
-int add(int a, int b)
-{
-int c = a + b;
-
-return (c);
-}
-
-/**
- * op_add - Entry point
  * @a: parameter
  * @b: parameter
  * Return: Always 0.
