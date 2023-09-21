@@ -1,5 +1,7 @@
 #include "3-calc.h"
 
+/**
+ * op_add - Entry point
  * @a: parameter
  * @b: parameter
  * Return: Always 0.
