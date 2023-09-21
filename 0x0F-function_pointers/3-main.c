@@ -4,7 +4,8 @@
 
 /**
  * main - Entry point
- *
+ * @argc: argument input amount
+ * @argv: command line inputs
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
