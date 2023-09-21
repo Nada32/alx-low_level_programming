@@ -6,7 +6,7 @@
  * @a: parameter
  * Return: Always 0.
  */
-int (*_p(char *a))(int, int)
+int (*get_op_func(char *s))(int, int)
 {
 int i;
 
@@ -15,8 +15,8 @@ op_t ops[] = {{"+", op_add}, {"-", op_sub},
 
 for (i = 0; i < 5; i++)
 {
-if (a == ops[i].c)
-return (ops[i].func);
+if (s == ops[i].op)
+return (ops[i].f);
 }
 return (NULL);
 
