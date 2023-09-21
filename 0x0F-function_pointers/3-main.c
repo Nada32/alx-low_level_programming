@@ -10,11 +10,26 @@
  */
 int main(int argc, char *argv[])
 {
+char z = argv[2][0];
 int z;
-if (argc == 4)
+if (argc != 4)
 {
-z = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-printf("%d\n", z);
+printf("Error\n");
+exit(98);
 }
+if ((z != '-' && z != '+' &&
+z != '/' && z != '*' && z != '%')
+|| argv[2][1] != '\0')
+{
+printf("Error\n");
+exit(99);
+}
+if (atoi(argv[3]) == 0 && (z == '/' || z == '%'))
+{
+printf("Error\n");
+exit(100);
+}
+zz = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
+printf("%d\n", zz);
 return (0);
 }
