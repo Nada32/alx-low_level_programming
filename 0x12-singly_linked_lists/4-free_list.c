@@ -14,6 +14,6 @@ list_t *X;
 
 X = head;
 head = head->next;
-free(x);
+free(X);
 }
 
