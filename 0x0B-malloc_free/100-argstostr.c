@@ -10,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j, z = 0;
+	int i, j, z = 0, zz = 0;
 	char *arr;
 
 	arr = NULL;
@@ -30,8 +30,12 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 	for (j = 0; av[i][j] != '\0'; j++)
-	arr[i] = av[i][j];
-	arr[i] = '\n';
+	{
+	arr[zz] = av[i][j];
+	zz++;
+	}
+	arr[zz] = '\n';
+	zz++;
 	}
 	return (arr);
 }
