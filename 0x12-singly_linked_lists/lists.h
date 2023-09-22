@@ -2,6 +2,14 @@
 #define LIST_H
 #include <stdio.h>
 
+/**
+ * struct list_s - short description
+ * @str: string - parameter
+ * @len: parameter
+ * @next: points to the next node
+ *
+ * Description: long descrition
+ */
 typedef struct list_s
 {
 char *str;
