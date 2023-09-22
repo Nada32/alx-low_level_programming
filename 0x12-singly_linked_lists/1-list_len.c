@@ -14,8 +14,8 @@ const list_t *cur = h;
 int i = 0;
 while (h != NULL)
 {
-i++;
 cur = cur->next;
+i++;
 }
 return (i);
 
