@@ -14,14 +14,14 @@ char *argstostr(int ac, char **av)
 	char *arr;
 
 	arr = NULL;
-	if ((ac == 0) || (av == NULL))
+	if ((ac == 0) || (*av == NULL))
 	return (NULL);
 	arr = (char *) malloc(ac * sizeof(char));
-	if ((arr == NULL))
+	if (arr == NULL)
 	{
 	return (NULL);
 	}
 	for (i = 0; i < ac; i++)
-	arr[i] = c;
+	arr[i] = *av[i];
 	return (arr);
 }
