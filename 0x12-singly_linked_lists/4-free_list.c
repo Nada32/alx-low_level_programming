@@ -10,10 +10,12 @@
  */
 void free_list(list_t *head)
 {
-list_t *X;
-
-X = head;
-head = head->next;
-free(X);
+if (head != NULL)
+{
+if (head->next != NULL)
+free_list(head->next);
+free(head->str);
+free(head);
+}
 }
 
