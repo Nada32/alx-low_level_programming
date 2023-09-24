@@ -69,17 +69,17 @@ mix_t m[] = {{'c', pcr}, {'i', pint},
 {'s', ps}, {'f', pf}};
 
 va_start(args, format);
-j = 0;
 i = 0;
-while (j < 4)
+while (format[i] != '\0' && format != NULL)
 {
-while (format[i] != '\0')
+j = 0;
+while (j < 4)
 {
 if (format[i] == m[j].cr)
 m[j].func(args);
-i++;
-}
 j++;
+}
+i++;
 }
 va_end(args);
 }
