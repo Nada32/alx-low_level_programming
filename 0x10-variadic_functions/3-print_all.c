@@ -2,6 +2,61 @@
 #include <stdarg.h>
 
 /**
+ * pint - Entry point
+ * @b: parameter
+ * Return: Always 0.
+ */
+void pint(va_list b)
+{
+int bb;
+
+bb = va_arg(b, int);
+printf("%d", bb);
+}
+
+/**
+ * pcr - Entry point
+ * @b: parameter
+ * Return: Always 0.
+ */
+void pcr(va_list b)
+{
+char bb;
+bb = va_arg(b, int);
+printf("%c", bb);
+}
+
+/**
+ * ps - Entry point
+ * @b: parameter
+ * Return: Always 0.
+ */
+void ps(va_list b)
+{
+char *bb;
+
+bb = va_arg(b, char *);
+if (!bb)
+printf("(nil)");
+printf("%s", bb);
+}
+
+/**
+ * pf - Entry point
+ * @b: parameter
+ * Return: Always 0.
+ */
+void pf(va_list b)
+{
+float bb;
+
+bb = va_arg(b, double);
+printf("%f", bb);
+}
+
+
+
+/**
  * print_all - Entry point
  * @format: parameter
  * Return: Always 0.
@@ -9,25 +64,22 @@
 void print_all(const char * const format, ...)
 {
 va_list args;
-unsigned int i, j, sum;
+int i, j;
+mix_t m[] = {{'c', pcr}, {'i', pint},
+{'s', ps}, {'f', pf}};
 
 va_start(args, format);
-
-mix_t m[] = {{'c', va_arg(int)}, {'i', va_arg(int)},
-{'s', va_arg(char *)}, {'f', va_arg(double)}};
 j = 0;
-sum = 0;
 i = 0;
 while (j < 4)
 {
 while (format[i] != '\0')
 {
 if (format[i] == m[j].cr)
-printf("%va_list", m[j].b);
+m[j].func(args);
 i++;
 }
 j++;
 }
 va_end(args);
-return (sum);
 }
