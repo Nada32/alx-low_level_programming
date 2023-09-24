@@ -65,18 +65,25 @@ void print_all(const char * const format, ...)
 {
 va_list args;
 int i, j;
+char *x, *y;
 mix_t m[] = {{'c', pcr}, {'i', pint},
 {'s', ps}, {'f', pf}};
 
 va_start(args, format);
 i = 0;
+x = "";
+y =  ", ";
 while (format[i] != '\0' && format != NULL)
 {
 j = 0;
 while (j < 4)
 {
 if (format[i] == m[j].cr)
+{
+printf("%s", x);
 m[j].func(args);
+x = y;
+}
 j++;
 }
 i++;
