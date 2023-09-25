@@ -76,10 +76,6 @@ va_start(args, format);
 i = 0;
 x = "";
 y =  ", ";
-if (format == NULL)
-{
-return;
-}
 while (format[i] != '\0' && format != NULL)
 {
 j = 0;
