@@ -67,7 +67,7 @@ va_list args;
 int i, j;
 char *x, *y;
 mix_t m[] = {{'c', pcr}, {'i', pint},
-{'s', ps}, {'f', pf}};
+{'s', ps}, {'f', pf}, {'\0', NULL}};
 
 va_start(args, format);
 i = 0;
@@ -76,7 +76,7 @@ y =  ", ";
 while (format[i] != '\0' && format != NULL)
 {
 j = 0;
-while (j < 4)
+while (m[j].cr != '\0')
 {
 if (format[i] == m[j].cr)
 {
