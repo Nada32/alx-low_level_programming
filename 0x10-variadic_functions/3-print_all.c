@@ -76,6 +76,11 @@ va_start(args, format);
 i = 0;
 x = "";
 y =  ", ";
+if (format[i] == NULL)
+{
+printf("");
+return;
+}
 while (format[i] != '\0' && format != NULL)
 {
 j = 0;
