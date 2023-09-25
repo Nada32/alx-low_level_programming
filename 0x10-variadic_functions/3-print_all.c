@@ -37,7 +37,10 @@ char *bb;
 
 bb = va_arg(b, char *);
 if (!bb)
+{
 printf("(nil)");
+return;
+}
 printf("%s", bb);
 }
 
@@ -67,7 +70,7 @@ va_list args;
 int i, j;
 char *x, *y;
 mix_t m[] = {{'c', pcr}, {'i', pint},
-{'s', ps}, {'f', pf}, {'\0', NULL}};
+{'s', ps}, {'f', pf}};
 
 va_start(args, format);
 i = 0;
@@ -76,7 +79,7 @@ y =  ", ";
 while (format[i] != '\0' && format != NULL)
 {
 j = 0;
-while (m[j].cr != '\0')
+while (j < 4)
 {
 if (format[i] == m[j].cr)
 {
