@@ -12,7 +12,7 @@ if ((n % i) != 0)
 return (1);
 else
 return (0);
-return (h(n , i++));
+return (h(n, i++));
 }
 
 /**
