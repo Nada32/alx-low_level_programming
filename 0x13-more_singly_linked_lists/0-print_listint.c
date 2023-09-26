@@ -14,7 +14,7 @@ int i = 0;
 
 while (h != NULL)
 {
-printf("[%d] %d\n", h->len, h->deci);
+printf("%d\n", h->deci);
 h = h->next;
 i++;
 }
