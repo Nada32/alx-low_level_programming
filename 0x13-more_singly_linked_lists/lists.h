@@ -28,7 +28,7 @@ struct list_s *next;
  */
 typedef struct listint_s
 {
-size_t n;
+int n;
 unsigned int len;
 struct listint_s *next;
 } listint_t;
