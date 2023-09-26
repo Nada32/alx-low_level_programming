@@ -19,8 +19,8 @@ struct list_s *next;
 } list_t;
 
 /**
- * struct list_s - short description
- * @str: string - parameter
+ * struct listint_s - short description
+ * @n: integer - parameter
  * @len: parameter
  * @next: points to the next node
  *
