@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * print_list - function
+ * print_listint - function
  * @h: parameter
  *
  * Description: prints all elements
