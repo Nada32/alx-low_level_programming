@@ -21,7 +21,6 @@ struct list_s *next;
 /**
  * struct listint_s - short description
  * @n: integer - parameter
- * @len: parameter
  * @next: points to the next node
  *
  * Description: long descrition
