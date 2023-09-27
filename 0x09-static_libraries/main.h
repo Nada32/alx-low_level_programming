@@ -56,5 +56,10 @@ int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int is_prime_number(int n);
-
+void _da(char *str);
+void _na(char *str);
+void _d(char *str);
+void _o(char *str);
+void _dd(char *str);
+void _y(char *str);
 #endif
