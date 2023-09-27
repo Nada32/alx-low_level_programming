@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - write string
+ * _d - write string
  * @str: parameter
  * Return: Always 0 (Success)
  */
