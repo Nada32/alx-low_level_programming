@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memset - filling memo with a const byet
+ * _memset - filling memo with a const byet
  * @s: parameter
  * @b: parameter
  * @n: parameter
