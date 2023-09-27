@@ -5,7 +5,7 @@
  * @str: parameter
  * Return: Always 0 (Success)
  */
-void _puts(char *str)
+void _d(char *str)
 {
 	int i;
 
