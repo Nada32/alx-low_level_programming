@@ -2,35 +2,26 @@
 #include "lists.h"
 
 /**
- * print_listint_safe - function
+ * reverse_listint - function
  * @head: parameter
  *
  * Description: prints all elements
  * Return: number of nodes
  */
-size_t print_listint_safe(const listint_t *head)
+listint_t *reverse_listint(listint_t **head)
 {
-const listint_t *current, *ne;
-size_t i, r;
+listint_t *ne = NULL, *nee = NULL;
 
-k = head;
-i = 0;
+if (head == NULL || *head == NULL)
+return (NULL);
 
-while (k != NULL)
+while (*head != NULL)
 {
-ne = head;
-for (r = 0; r < i; r++)
-{
-if (ne == k)
-{
-printf("-> [%p] %d\n", (void *)k, k->n);
-return (i);
+ne = (*head)->next;
+(*head)->next = nee;
+nee = *head;
+*head = ne;
 }
-ne = ne->next;
-}
-printf("[%p] %d\n", (void *)k, k->n);
-k = k->next;
-i++;
-}
-return (i);
+*head = nee;
+return (*head);
 }
