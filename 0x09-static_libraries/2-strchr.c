@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strchr - filling memo with a const byet
+ * _strchr - filling memo with a const byet
  * @s: parameter
  * @c: parameter
  * Return: Always 0 (Success)
