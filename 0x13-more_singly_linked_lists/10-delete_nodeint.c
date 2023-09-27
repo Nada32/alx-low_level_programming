@@ -2,20 +2,35 @@
 #include "lists.h"
 
 /**
- * sum_listint - function
+ * delete_nodeint_at_index - function
  * @head: parameter
+ * @index: parameter
  *
  * Description: prints all elements
  * Return: number of nodes
  */
-int sum_listint(listint_t *head)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
+listint_t *k, *ne;
 unsigned int i = 0;
-
-while (head != NULL)
+if (head == NULL || *head == NULL)
+return (-1);
+k = *head;
+if (index == 0)
 {
-i += head->n;
-head = head->next;
+*head = k->next;
+free(k);
+return (1);
 }
-return (i);
+while (i < index - 1)
+{
+if (k->next == NULL)
+return (-1);
+k = k->next;
+i++;
+}
+ne = k->next;
+k->next = ne->next;
+free(ne);
+return (1);
 }
