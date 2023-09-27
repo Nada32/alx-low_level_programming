@@ -1,21 +1,13 @@
 #include "main.h"
 
 /**
- * _O - write string
+ * _atoi - write string
  * @str: parameter
  * Return: Always 0 (Success)
  */
-void _O(char *str)
+int _atoi(char *s)
 {
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-	_putchar(str[i]);
-	i = i + 1;
-	}
-	_putchar('\n');
+	;
 }
 
 
