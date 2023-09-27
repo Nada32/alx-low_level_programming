@@ -1,21 +1,14 @@
 #include "main.h"
 
 /**
- * _da - write string
- * @str: parameter
+ * _strstr - write string
+ * @haystack: parameter
+ * @needle: parameter
  * Return: Always 0 (Success)
  */
-void _da(char *str)
+char *_strstr(char *haystack, char *needle)
 {
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-	_putchar(str[i]);
-	i = i + 1;
-	}
-	_putchar('\n');
+	;
 }
 
 
