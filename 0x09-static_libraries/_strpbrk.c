@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _puts - write string
+ * _na - write string
  * @str: parameter
  * Return: Always 0 (Success)
  */
-void _puts(char *str)
+void _na(char *str)
 {
 	int i;
 
