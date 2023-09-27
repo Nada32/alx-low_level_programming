@@ -10,13 +10,11 @@
  */
 int main(int argc, char **argv)
 {
-int z;
-if (argc < 2)
+if (argc < 3)
 {
 printf("Error\n");
 return (1);
 }
-z = (int) *argv[1] * (int) *argv[2];
-printf("%d\n", z);
+printf("%d\n", atoi(*(argv + 1)) * atoi(*(argv + 2)));
 return (0);
 }
