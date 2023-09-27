@@ -1,21 +1,14 @@
 #include "main.h"
 
 /**
- * _d - write string
- * @str: parameter
+ * _strcpy - write string
+ * @dest: parameter
+ * @src: parameter
  * Return: Always 0 (Success)
  */
-void _d(char *str)
+char *_strcpy(char *dest, char *src)
 {
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-	_putchar(str[i]);
-	i = i + 1;
-	}
-	_putchar('\n');
+	;
 }
 
 
