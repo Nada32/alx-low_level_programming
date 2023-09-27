@@ -10,31 +10,21 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-listint_t *k, *ne, *head;
-size_t hh, r;
+size_t i = 0;
+listint_t *ne;
 
-if (h == NULL || *h == NULL)
-return (0);
-k = *h;
-head = *h;
-hh = 0;
-while (head != NULL)
+while (*h && *h > (*h)->next)
 {
-ne = *h;
-for (r = 0; r < hh; r++)
-{
-if (ne == k)
-{
-*h = NULL;
-return (hh);
+ne = (*h)->next;
+free(*h);
+*h = ne;
+++i;
 }
-ne = ne->next;
-}
-k = head->next;
-free(head);
-head = k;
-hh++;
+if (*h)
+{
+free(*h);
+++i;
 }
 *h = NULL;
-return (hh);
+return (i);
 }
