@@ -1,21 +1,15 @@
 #include "main.h"
 
 /**
- * y - write string
- * @str: parameter
+ * _strncat - write string
+ * @dest: parameter
+ * @src: parameter
+ * @n: parameter
  * Return: Always 0 (Success)
  */
-void _y(char *str)
+char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-	_putchar(str[i]);
-	i = i + 1;
-	}
-	_putchar('\n');
+	;
 }
 
 
