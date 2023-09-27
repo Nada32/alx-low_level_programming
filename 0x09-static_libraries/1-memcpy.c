@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memcpy - filling memo with a const byet
+ * _memcpy - filling memo with a const byet
  * @dest: parameter
  * @src: parameter
  * @n: parameter
