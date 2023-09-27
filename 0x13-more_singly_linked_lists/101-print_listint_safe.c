@@ -2,20 +2,35 @@
 #include "lists.h"
 
 /**
- * sum_listint - function
+ * print_listint_safe - function
  * @head: parameter
  *
  * Description: prints all elements
  * Return: number of nodes
  */
-int sum_listint(listint_t *head)
+size_t print_listint_safe(const listint_t *head)
 {
-unsigned int i = 0;
+const listint_t *current, *ne;
+size_t i, r;
 
-while (head != NULL)
+k = head;
+i = 0;
+
+while (k != NULL)
 {
-i += head->n;
-head = head->next;
+ne = head;
+for (r = 0; r < i; r++)
+{
+if (ne == k)
+{
+printf("-> [%p] %d\n", (void *)k, k->n);
+return (i);
+}
+ne = ne->next;
+}
+printf("[%p] %d\n", (void *)k, k->n);
+k = k->next;
+i++;
 }
 return (i);
 }
