@@ -16,10 +16,10 @@ return (1 + _strlen_recursion(s));
 return (0);
 }
 /**
- * c - extra
+ * c - extra func
  * @str: the string
  * @len: parameter
- * @count: counter of recursion
+ * @i: counter of recursion
  * Return: 1 if string is a palindrome, 0 if it is not.
  */
 int c(char *str, int len, int i)
