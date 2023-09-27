@@ -27,7 +27,7 @@ int c(char *str, int len, int i)
 if (i >= len)
 return (1);
 if (str[len] == str[i])
-return (checker(str, len - 1, i + 1));
+return (c(str, len - 1, i + 1));
 return (0);
 }
 /**
