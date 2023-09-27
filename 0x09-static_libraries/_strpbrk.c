@@ -1,21 +1,14 @@
 #include "main.h"
 
 /**
- * _na - write string
- * @str: parameter
+ * _strpbrk - write string
+ * @s: parameter
+ * @accept: parameter
  * Return: Always 0 (Success)
  */
-void _na(char *str)
+char *_strpbrk(char *s, char *accept)
 {
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-	_putchar(str[i]);
-	i = i + 1;
-	}
-	_putchar('\n');
+	;
 }
 
 
