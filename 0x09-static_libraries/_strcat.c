@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _dd - write string
- * @str: parameter
+ * _strcat - write string
+ * @dest: parameter
+ * @src: parameter
  * Return: Always 0 (Success)
  */
-void _dd(char *str)
+char *_strcat(char *dest, char *src)
 {
 	int i;
 
