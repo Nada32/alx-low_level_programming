@@ -2,20 +2,30 @@
 #include "lists.h"
 
 /**
- * sum_listint - function
+ * *find_listint_loop - function
  * @head: parameter
  *
  * Description: prints all elements
  * Return: number of nodes
  */
-int sum_listint(listint_t *head)
+listint_t *find_listint_loop(listint_t *head)
 {
-unsigned int i = 0;
-
-while (head != NULL)
+listint_t *s = head;
+listint_t *f = head;
+while (s != NULL && f != NULL && f->next != NULL)
 {
-i += head->n;
-head = head->next;
+s = s->next;
+f = (f->next)->next;
+if (s == f)
+{
+s = head;
+while (s != f)
+{
+s = s->next;
+f = f->next;
 }
-return (i);
+return (s);
+}
+}
+return (NULL);
 }
