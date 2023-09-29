@@ -13,6 +13,8 @@ int i, len, j;
 y = 0;
 len = 0;
 
+if (b == NULL)
+return (0);
 while (b[len] != '\0')
 len++;
 for (i = len - 1; i >= 0; i--)
