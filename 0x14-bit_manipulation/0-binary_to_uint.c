@@ -27,6 +27,9 @@ for (j = 0; j < len - i - 1; j++)
 z = 2 * (unsigned int)(b[i] - '0') * z;
 zz = z;
 }
+if (b[len - 1] == '1')
+y = z + y;
+else if (b[len - 1] == '0')
 y = zz + y;
 }
 return (y);
