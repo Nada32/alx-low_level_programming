@@ -8,11 +8,12 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-if (((n / 2) == 0) || index == 0)
+if (index == 0)
 {
 return (n % 2);
-return (0);
 }
-
-return (get_bit(n / 2, index--));
+else if ((n / 2) == 0)
+return (0);
+index--;
+get_bit(n / 2, index);
 }
