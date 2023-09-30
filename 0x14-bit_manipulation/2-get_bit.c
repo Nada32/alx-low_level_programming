@@ -13,7 +13,14 @@ if (index == 0)
 return (n % 2);
 }
 else if ((n / 2) == 0)
+{
 return (0);
+}
+else if (index != 0)
+{
 index--;
-get_bit(n / 2, index);
+}
+else
+return (0);
+return (get_bit(n / 2, index));
 }
