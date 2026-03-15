@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - This program prints all single digit numbers of base 10 .
+ * main - This program prints in char from 012 to 699
  *
  * Return: Always 0 (Success)
  */
