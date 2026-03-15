@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - This program prints all single digit numbers of base 10 .
+ * main - This program prints 01, 02, 03, 04 to 89 in char with +'0' and two for loops
  *
  * Return: Always 0 (Success)
  */
