@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - This program prints all single digit numbers of base 10 .
+ * main - This program prints all single digit numbers of base 16, hexa decimal
  *
  * Return: Always 0 (Success)
  */
