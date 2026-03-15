@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - This program prints all single digit numbers of base 10 .
+ * main - This program prints all single digit numbers of base 10 0, 1, 2, idea +'0' make it reach numbers in unicode
  *
  * Return: Always 0 (Success)
  */
